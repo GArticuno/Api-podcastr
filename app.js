@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8877;
 
 app.get(`/episodes/:id`, (req, res)=>{
   res.json(episodes.find((episode)=>{
-    return episode.id = req.params.id
+    return episode.id === req.params.id
   }));
 })
 
